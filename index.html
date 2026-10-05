@@ -29,8 +29,9 @@
       });
     
       function vkidOnSuccess(data) {
-        // Обработка полученного результата
-      }
+  console.log('VK ID SUCCESS:', data);
+  document.body.innerHTML = '<h2>✅ Авторизация VK прошла успешно</h2><p>Данные получены.</p>';
+}
     
       function vkidOnError(error) {
         // Обработка ошибки
